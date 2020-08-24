@@ -14,12 +14,18 @@
 
     <body>
         <div ng-app="app">
-            <div class="unproduit" ng-controller="produitctrl">
-            Votre article '{{nom}}' ref : {{ref}} au prix de {{prix}}€ a été ajouté au panier pour un total de {{quant * prix | currency : '&euro;' : 3}}
+            <div class="unproduit" ng-controller="produitctrl as produit">
+            Votre article '{{produit.nom}}' ref : {{produit.ref}} au prix de {{produit.prix | currency}}€ a été ajouté au panier pour un total de {{quant * prix | currency : '&euro;' : 3}}
             <br/>
             <hr/>
             Reférence du produit :
-            <input type="text" name="ref" id="ref" ng-model="ref" />
+            <input type="text" name="produit.ref" id="produit.ref" ng-model="produit.ref" />
+            <hr/>
+            Prix du produit :
+            <input type="number" name="produit.prix" id="produit.prix" ng-model="produit.prix" />
+            <hr/>
+            Nom du produit :
+            <input type="text" name="produit.nom" id="produit.nom" ng-model="produit.nom" />
             </div>
         </div>
 
