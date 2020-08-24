@@ -4,8 +4,9 @@ angular.module('app').controller('produitctrl', ['$scope', function($scope)
 //    $scope.prix=2.20;
 //    $scope.nom='Bouffe';
 
-    this.ref='ABD-BCD';
+    this.titre='Saturne';
+    this.image='/images/saturne.jpg';
     this.prix=2.20;
-    this.nom='Bouffe';
+    this.desc='Planète gazeuse pas chère.'
 
 }])
