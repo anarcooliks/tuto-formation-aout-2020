@@ -2,8 +2,8 @@
     'use strict';
 
     angular
-        .module('moduleNavBar',[])
-        .directive('navBar', Directive);
+        .module('app')
+        .directive('panier', Directive);
 
  //   Directive.$inject = ['dependency1'];
     function Directive() {
@@ -17,8 +17,8 @@
                 //conteneur du controller de la directive
             },
          //   controllerAs: 'vm',
-            restrict: 'EAC',
-            templateUrl:'/APP/directive/navbar/navBar.html'
+            restrict: 'E',
+            templateUrl:'/APP/directive/panier/panier.html'
 //            template:'<div> Voici ma directive </div>'
 //            scope: {tire:'Mon premier site angularjs'
 //            }
