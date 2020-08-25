@@ -11,18 +11,18 @@
             <td><img src="/images/saturne.jpg" style="width:48px;"></td>
             <td>Planète</td>
             <td>2</td>
-            <td>22.50</td>
+            <td>{{22.558465 | myround : 3 | mycurrency : '€' : 3}}</td>
         </tr>  
         <tr>
             <td colspan="2">Sous-total</td>
-            <td>45.00€</td>
+            <td>45.11693€</td>
         </tr>  
         <tr>
             <td colspan="2">T.V.A (20%)</td>
-            <td>9€</td>
+            <td>{{45.11693 | tva : 19.6 | mycurrency : '€'}}</td>
         </tr>  
         <tr>
             <td colspan="2">Total TTC </td>
-            <td>54.00€</td>
+            <td>{{45.11693 | ttc : 19.6 | mycurrency}}</td>
         </tr>  
 </table>
